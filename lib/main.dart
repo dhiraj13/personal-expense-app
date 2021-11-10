@@ -36,7 +36,7 @@ class MyHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Flutter App'),
+        title: const Text('Flutter App'),
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -44,7 +44,7 @@ class MyHomePage extends StatelessWidget {
         children: <Widget>[
           Container(
             width: double.infinity,
-            child: Card(
+            child: const Card(
               color: Colors.blue,
               child: Text('CHART!'),
               elevation: 5,
@@ -56,19 +56,24 @@ class MyHomePage extends StatelessWidget {
                 child: Row(
                   children: <Widget>[
                     Container(
-                      margin: EdgeInsets.symmetric(
+                      margin: const EdgeInsets.symmetric(
                         vertical: 10,
                         horizontal: 15,
                       ),
                       decoration: BoxDecoration(
                         border: Border.all(
-                          color: Colors.black,
+                          color: Colors.purple,
                           width: 2,
                         ),
                       ),
-                      padding: EdgeInsets.all(10),
+                      padding: const EdgeInsets.all(10),
                       child: Text(
                         tx.amount.toString(),
+                        style: const TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 20,
+                          color: Colors.purple,
+                        ),
                       ),
                     ),
                     Column(

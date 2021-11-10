@@ -1,8 +1,8 @@
 class Transaction {
-  String? id;
-  String? title;
-  double? amount;
-  DateTime? date;
+  String id;
+  String title;
+  double amount;
+  DateTime date;
 
   Transaction(
       {required this.id,
